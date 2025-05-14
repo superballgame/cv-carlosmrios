@@ -34,10 +34,24 @@ function App() {
   return (
     <>
       <div ref={contentRef}>
-        <header className='cabecera'>
-          <h2>JUAN GUILLERMO RIOS C.</h2>
-          <h4>INGENIERO DE SISTEMAS | Universidad Cooperativa de Colombia</h4>
-        </header>
+        <div className='cv-container'>
+          <header className='cabecera'>
+            <h2>JUAN GUILLERMO RIOS C.</h2>
+            <h4>INGENIERO DE SISTEMAS | Universidad Cooperativa de Colombia</h4>
+
+            <div className="whatsapp-button">
+              <a
+                href="https://wa.me/573116209170"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Chatear por WhatsApp"
+              >
+                🟢 WhatsApp
+              </a>
+            </div>
+          
+          </header>
+        </div>
         <div className="image-wrapper">
           <img src="./foto_juan.png" alt="Foto" className="pic" />
         </div>

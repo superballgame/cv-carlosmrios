@@ -11,11 +11,11 @@ body,
   display: flex;
   flex-direction: column;
   max-width: 1200px;
+  /* Puedes ajustar este valor según el diseño */
   margin: 0 auto;
+  /* Centra el contenido horizontalmente */
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: relative;
-  /* necesario para que image-wrapper se posicione respecto a esto */
 }
 
 .cabecera {
@@ -35,7 +35,6 @@ body,
   flex-direction: row;
   gap: 20px;
   max-width: 980px;
-  margin: 0 auto;
   flex-wrap: nowrap;
   overflow: hidden;
   position: relative;
@@ -43,10 +42,9 @@ body,
 }
 
 .left {
-  width: 30%;
+  width:30%;
   background-color: #f0f0f0;
   padding-top: 150px;
-  /* da espacio para la imagen superpuesta */
   padding-left: 30px;
   padding-right: 20px;
   text-align: left;
@@ -54,7 +52,7 @@ body,
   flex-direction: column;
   align-items: flex-start;
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 
 .right {
@@ -62,23 +60,21 @@ body,
   background-color: #ffffff;
   padding: 10px;
   overflow-wrap: break-word;
-  text-align: justify;
+  text-align:justify;
 }
 
+/* Envolver la imagen para posicionarla sobre el header */
 .image-wrapper {
   position: absolute;
-  top: 100px;
-  /* ajuste vertical para que quede entre cabecera y columna izquierda */
-  left: 100px;
-  /* ajuste horizontal para alinear bien sobre la columna */
-  z-index: 12;
-  width: 250px;
-  height: 250px;
+  top: 80px;
+  left: 13%;
+  transform: translateX(-50%);
+  z-index: 13;
 }
 
 .pic {
-  width: 100%;
-  height: 100%;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   border: 3px solid white;
   background-color: white;
@@ -187,11 +183,13 @@ body,
   margin-top: 20px;
   margin-left: 15px;
   color: #ccc;
-  font-weight: bold;
+  font-weight:bold;
+  
 }
 
 .btn.descargar:hover {
   background-color: #0056b3;
+  
 }
 
 .whatsapp-button {
@@ -214,42 +212,6 @@ body,
 
 .whatsapp-button a:hover {
   background-color: #1ebe5b;
-}
-
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .left,
-  .right {
-    width: 100%;
-  }
-
-  .cabecera {
-    padding-left: 20px;
-    text-align: center;
-  }
-
-  .image-wrapper {
-    position: static;
-    margin: 20px auto 0;
-    transform: none;
-    width: 180px;
-    height: 180px;
-  }
-
-  .pic {
-    width: 100%;
-    height: 100%;
-  }
-
-  .whatsapp-button {
-    position: static;
-    margin: 20px auto;
-    text-align: center;
-  }
 }
 
 @keyframes logo-spin {
