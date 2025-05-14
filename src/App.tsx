@@ -25,7 +25,7 @@ function App() {
         format: [1650, 2350], // A4 exacto en px
         orientation: 'portrait',
       },
-     // pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
+      // pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
     };
 
     html2pdf().set(opt).from(element).save();
@@ -43,7 +43,7 @@ function App() {
         </div>
         <div className='container'>
           <div className='left'>
-            
+
             <h3 className='titulo'>CONTACTO</h3>
 
             <div className="info-item">
@@ -121,7 +121,7 @@ function App() {
             <section>
               <h3 className='section-title'>PERFIL PROFESIONAL</h3>
               <p>
-                Ingeniero de Sistemas con sólida formación académica y amplia experiencia tanto en el sector público como en el privado. A lo largo de mi trayectoria ha desempeñado funciones clave en áreas como logística, análisis predial, gestión de inventarios y soporte técnico en hardware y software. Mi vocación por el conocimiento me ha llevado a ejercer la docencia en niveles de primaria, secundaria y educación superior, desarrollando una buena capacidad para comunicar de forma clara y efectiva. Profesional leal, proactivo y comprometido, con un fuerte sentido de responsabilidad y trabajo en equipo. Casado y padre de dos hijos, combina mi vida familiar con una constante búsqueda de crecimiento personal y profesional.
+                Ingeniero de Sistemas con sólida formación académica y amplia experiencia tanto en el sector público como en el privado. A lo largo de mi trayectoria he desempeñado funciones clave en áreas como logística, análisis predial, gestión de inventarios y soporte técnico en hardware y software. Mi vocación por el conocimiento me ha llevado a ejercer la docencia en niveles de secundaria y educación superior, desarrollando una buena capacidad para comunicar de forma clara y efectiva. Profesional leal, proactivo y comprometido, con un fuerte sentido de responsabilidad y trabajo en equipo. Casado y padre de dos hijos, combino mi vida familiar con una constante búsqueda de crecimiento personal y profesional.
               </p>
             </section>
 
