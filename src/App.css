@@ -67,9 +67,9 @@ body,
 
 .image-wrapper {
   position: absolute;
-  top: 100px;
+  top: 85px;
   /* ajuste vertical para que quede entre cabecera y columna izquierda */
-  left: 100px;
+  left: 30px;
   /* ajuste horizontal para alinear bien sobre la columna */
   z-index: 12;
   width: 250px;
@@ -274,4 +274,14 @@ body,
 
 .read-the-docs {
   color: #888;
+}
+
+.no-print {
+  display: block;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
 }

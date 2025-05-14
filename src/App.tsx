@@ -10,26 +10,43 @@ function App() {
     const element = contentRef.current;
     if (!element) return;
 
+    const botonDescarga = document.getElementById("boton-descarga");
+    const botonWhatsapp = document.getElementById("boton-whatsapp");
+
+    // Oculta los botones antes de exportar
+    if (botonDescarga) botonDescarga.style.visibility = "hidden";
+    if (botonWhatsapp) botonWhatsapp.style.visibility = "hidden";
+
     const opt = {
       margin: 0,
       filename: 'cv-JuanGRios.pdf',
       image: { type: 'jpeg', quality: 0.98 },
       html2canvas: {
-        scale: 1, // Disminuye esto si quieres comprimir más el contenido
+        scale: 1,
         useCORS: true,
         scrollY: 0,
         scrollX: 0,
+        windowWidth: document.body.scrollWidth,
+        windowHeight: document.body.scrollHeight,
       },
       jsPDF: {
         unit: 'px',
-        format: [1650, 2350], // A4 exacto en px
+        format: [980, 2350],
         orientation: 'portrait',
       },
-      // pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
     };
 
-    html2pdf().set(opt).from(element).save();
+    html2pdf()
+      .set(opt)
+      .from(element)
+      .save()
+      .then(() => {
+        // Restaurar visibilidad de los botones
+        if (botonDescarga) botonDescarga.style.visibility = "visible";
+        if (botonWhatsapp) botonWhatsapp.style.visibility = "visible";
+      });
   };
+
 
   return (
     <>
@@ -39,7 +56,7 @@ function App() {
             <h2>JUAN GUILLERMO RIOS C.</h2>
             <h4>INGENIERO DE SISTEMAS | Universidad Cooperativa de Colombia</h4>
 
-            <div className="whatsapp-button">
+            <div className="whatsapp-button" id="boton-whatsapp">
               <a
                 href="https://wa.me/573116209170"
                 target="_blank"
@@ -49,7 +66,7 @@ function App() {
                 🟢 WhatsApp
               </a>
             </div>
-          
+
           </header>
         </div>
         <div className="image-wrapper">
@@ -124,7 +141,7 @@ function App() {
               <div className='info-row'><span>Idiomas:</span><span>Español</span></div>
               <div className='info-row'><span>Tarjeta Profesional:</span><span>05255237793ANT</span></div>
             </div>
-            <div className="button-container">
+            <div className="button-container" id="boton-descarga">
               <button onClick={handleDownload} className="btn descargar">
                 📄 Descargar Hoja de Vida
               </button>
