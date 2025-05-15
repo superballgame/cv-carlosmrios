@@ -20,7 +20,7 @@ function App() {
     const opt = {
       margin: 0,
       filename: 'cv-JuanGRios.pdf',
-      image: { type: 'jpeg', quality: 0.98 },
+      image: { type: 'jpeg', quality: 1 },
       html2canvas: {
         scale: 1,
         useCORS: true,
@@ -31,7 +31,7 @@ function App() {
       },
       jsPDF: {
         unit: 'px',
-        format: [980, 2350],
+        format: [980, 2050],
         orientation: 'portrait',
       },
     };
