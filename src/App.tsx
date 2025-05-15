@@ -192,7 +192,7 @@ function App() {
                 </li>
                 <li>
                   <strong>Macro S.A. (1996-1999)– Asistente de Servicio al Cliente / Operador Logístico / Supervisor de Control Final:</strong><br />
-                  Ingresó como asistente en servicio al cliente, brindando apoyo en procesos de devolución de productos y atención directa al cliente. Fue ascendido a operador logístico, donde estuve encargado de los sistemas informáticos de la tienda y de organizar la logística para los inventarios generales, incluyendo el diseño del layout cada seis meses. Posteriormente, fue promovido a supervisor de control final, siendo responsable de coordinar y supervisar los procesos relacionados con las cajas de registro y la recaudación diaria y el manejo de personal organizando turnos y descansos.
+                  Ingresó como asistente en servicio al cliente, brindando apoyo en procesos de devolución de productos y atención directa al cliente. Fui ascendido a operador logístico, donde estuve encargado de los sistemas informáticos de la tienda y de organizar la logística para los inventarios generales, incluyendo el diseño del layout cada seis meses. Posteriormente, fui promovido a supervisor de control final, siendo responsable de coordinar y supervisar los procesos relacionados con las cajas de registro y la recaudación diaria y el manejo de personal organizando turnos, descansos y manejo de personal.
                 </li>
                 <li>
                   <strong>Ferrocarril S.A. (2001-2002)– Soporte Técnico:</strong><br />
