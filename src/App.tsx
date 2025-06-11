@@ -58,7 +58,7 @@ function App() {
             <h4>ARQUITECTO CONSTRUCTOR | Universidad Nacional de Colombia</h4>
             <div className="whatsapp-button" id="boton-whatsapp">
               <a
-                href="https://wa.me/573116209170"
+                href="https://wa.me/573164864593"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Chatear por WhatsApp"
