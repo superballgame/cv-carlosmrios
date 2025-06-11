@@ -53,9 +53,9 @@ function App() {
       <div ref={contentRef}>
         <div className='cv-container'>
           <header className='cabecera'>
-            <h2>JUAN GUILLERMO RIOS C.</h2>
-            <h4>INGENIERO DE SISTEMAS | Universidad Cooperativa de Colombia</h4>
-
+            <h2>CARLOS MARIO RIOS C.</h2>
+            <h4>INGENIERO CIVIL | Universidad Cooperativa de Colombia</h4>
+            <h4>ARQUITECTO CONSTRUCTOR | Universidad Nacional de Colombia</h4>
             <div className="whatsapp-button" id="boton-whatsapp">
               <a
                 href="https://wa.me/573116209170"
@@ -70,7 +70,7 @@ function App() {
           </header>
         </div>
         <div className="image-wrapper">
-          <img src="./foto_juan.png" alt="Foto" className="pic" />
+          <img src="./carlosmariorios.jpeg" alt="Foto" className="pic" />
         </div>
         <div className='container'>
           <div className='left'>
@@ -81,7 +81,7 @@ function App() {
               <div className="icon-circle">📞</div>
               <div className="info-text">
                 <h4>Celular:</h4>
-                <p>+57 3116209170</p>
+                <p>+57 3164864593</p>
               </div>
             </div>
 
@@ -89,7 +89,7 @@ function App() {
               <div className="icon-circle">✉️</div>
               <div className="info-text">
                 <h4>Email:</h4>
-                <p>guiguirios@gmail.com</p>
+                <p>camayo@gmail.com</p>
               </div>
             </div>
 
@@ -97,8 +97,8 @@ function App() {
               <div className="icon-circle">📍</div>
               <div className="info-text">
                 <h4>Dirección:</h4>
-                <p>Carrera 42D No 45 C Sur - 124</p>
-                <p>Envigado - Antioquia</p>
+                <p>Calle 50 A No 16A -42</p>
+                <p>Medellín - Antioquia</p>
               </div>
             </div>
 
@@ -118,11 +118,15 @@ function App() {
               <h3 className='section-title'>COMPUTACIÓN</h3>
               {[
                 { name: 'MS EXCEL', level: '80%' },
-                { name: 'MS WORD', level: '70%' },
-                { name: 'MS POWERPOINT', level: '60%' },
-                { name: 'SQL', level: '50%' },
-                { name: 'REACT JS', level: '60%' },
-                { name: 'PHOTOSHOP', level: '50%' },
+                { name: 'MS WORD', level: '80%' },
+                { name: 'MS PROJECT', level: '90%'},
+                { name: 'MS POWERPOINT', level: '80%' },
+                { name: 'AUTOCAD', level: '90%'},
+                { name: 'REVIT', level:'90%'},
+                { name: 'PACO', level:'90%'},
+                { name: 'SAO', level: '90%'},
+                { name: 'COCO', level: '90%'},
+                
               ].map(({ name, level }) => (
                 <div className='skill' key={name}>
                   <span>{name}</span>
@@ -135,11 +139,11 @@ function App() {
 
             <div className='personal-section'>
               <h3 className='section-title'>PERSONAL</h3>
-              <div className='info-row'><span>Cédula:</span><span>71730200</span></div>
-              <div className='info-row'><span>Fecha de Nac:</span><span>06/03/1972</span></div>
+              <div className='info-row'><span>Cédula:</span><span>71790626</span></div>
+              <div className='info-row'><span>Fecha de Nac:</span><span>28/10/1977</span></div>
               <div className='info-row'><span>Nacionalidad:</span><span>Colombiano</span></div>
               <div className='info-row'><span>Idiomas:</span><span>Español</span></div>
-              <div className='info-row'><span>Tarjeta Profesional:</span><span>05255237793ANT</span></div>
+              <div className='info-row'><span>Tarjeta Profesional:</span><span>05202099643ANT</span></div>
             </div>
             <div className="button-container" id="boton-descarga">
               <button onClick={handleDownload} className="btn descargar">
@@ -152,73 +156,84 @@ function App() {
             <section>
               <h3 className='section-title'>PERFIL PROFESIONAL</h3>
               <p>
-                Ingeniero de Sistemas con sólida formación académica y amplia experiencia tanto en el sector público como en el privado. A lo largo de mi trayectoria he desempeñado funciones clave en áreas como logística, análisis predial, gestión de inventarios y soporte técnico en hardware y software. Mi vocación por el conocimiento me ha llevado a ejercer la docencia en niveles de secundaria y educación superior, desarrollando una buena capacidad para comunicar de forma clara y efectiva. Profesional leal, proactivo y comprometido, con un fuerte sentido de responsabilidad y trabajo en equipo. Casado y padre de dos hijos, combino mi vida familiar con una constante búsqueda de crecimiento personal y profesional.
+                Ingeniero Civil con más de 20 años de experiencia en dirección, supervisión y ejecución de obras civiles y edificaciones. Especialista en Gerencia de Construcciones, con formación complementaria en arquitectura constructora y supervisión técnica. He liderado exitosamente múltiples proyectos residenciales, comerciales e institucionales, demostrando habilidades sólidas en gestión de obra, control de presupuesto, normativas de calidad (ISO 9001), y coordinación técnica.
+
+Cuento con una trayectoria destacada en empresas reconocidas del sector constructor en Colombia, desempeñando cargos como Director de Obra, Residente y Representante Legal. Me caracterizo por mi compromiso, liderazgo, capacidad técnica y cumplimiento de metas en tiempos exigentes. Formación constante y manejo de herramientas especializadas para la planificación y control de obras.
               </p>
             </section>
 
             <section>
               <h3 className='section-title'>FORMACIÓN ACADÉMICA</h3>
               <ul>
-                <li><strong>INGENIERIA DE SISTEMAS</strong> - Universidad Cooperativa de Colombia</li>
-                <li><strong>FUNDAMENTOS DE PYTHON</strong> - PLATZY</li>
-                <li><strong>PYTHON FUNCIONES Y ERRORES</strong> - PLATZY</li>
-                <li><strong>FUNDAMENTOS DE BASE DE DATOS</strong> - PLATZY</li>
-                <li><strong>ORACLE SQL</strong> - ORACLE UNIVERSITY</li>
-                <li><strong>ORACLE DBA</strong> - ORACLE UNIVERSITY</li>
-                <li><strong>REACT JS</strong> - Autoaprendizaje</li>
+                <li><strong>ESPECIALISTA EN GERENCIA DE CONSTRUCCIONES</strong> - Universidad de Medellín</li>
+                <li><strong>DIPLOMATURA EN SUPERVISION TECNICA DE EDIFICACIONES</strong> - Universidad de Medellín</li>
+                <li><strong>INGLES</strong> - Universidad Nacional de Colombia</li>
+                <li><strong>SAO, PRESUPUESTO Y CONTROL PRESUPUESTAL</strong> - SAO</li>
+                <li><strong>COCO.(CONTROL DE PRESUPUESTO)</strong> - OBRAS</li>
+                <li><strong>PACO – Programa para la administración y control de obras civiles </strong> - OBRAS</li>
+                <li><strong>FUNDAMENTOS DE LA NORMA NTC-ISO 9001:2000</strong> - Universidad de Antioquia</li>
+                <li><strong>FUNDAMENTOS DE LA NORMA NTC-ISO 9001:2000 </strong>– Universidad de Antioquia</li>
+                <li><strong>FORMACION DE AUDITORES INTERNOS BASADO EN LA NORMA NTC-ISO 9001:2000 Y
+                NTC-ISO 19011:2000</strong> - Universidad de Antioquia</li>
               </ul>
             </section>
 
             <section>
               <h3 className='section-title'>EXPERIENCIA LABORAL</h3>
 
-              <h4>Sector Público:</h4>
-              <ul>
-                <li>
-                  <strong>Alcaldía de Itagüí (2010 – 2012) – Analista de Datos:</strong><br />
-                  Encargado de depurar y corregir inconsistencias en la base de datos del impuesto predial tras una migración fallida desde una plataforma antigua al sistema actual. Apoyo en procesos de validación y limpieza de datos catastrales y tributarios.
-                </li>
-                <li>
-                  <strong>Alcaldía de Bello (2012 – 2016) – Analista de Datos / Webmaster:</strong><br />
-                  Durante los primeros dos años, responsable de la identificación y corrección de errores en la migración de datos hacia un sistema Oracle. Posteriormente, desarrolle desde cero el sitio web oficial y la intranet de la Alcaldía utilizando Joomla. Además, cree dos app en la Intranet para la consulta de pagos rechazados por contratistas por errores en la cuenta de cobro.
-                </li>
-              </ul>
-
               <h4>Sector Privado:</h4>
-              <ul>
+              <ul className="list-disc pl-5 space-y-2 text-justify">
                 <li>
-                  <strong>Compujunior LTDA (1995-1996)– Soporte Técnico:</strong><br />
-                  Docente / Soporte Técnico: Empresa especializada en capacitación tecnológica y tercerización de servicios informáticos, donde me desempeñé como docente en cursos de sistemas operativos y ofimática, además de brindar soporte técnico en hardware y software, incluyendo instalación, mantenimiento y atención de requerimientos técnicos para clientes internos y externos.
+                  <strong>CLR Construcción y Asesoría</strong> – Coordinador Técnico de Obra (Oct 2023 – Actualidad)  
+                  Coordinación técnica y seguimiento de obras, garantizando calidad y cumplimiento de especificaciones.
                 </li>
                 <li>
-                  <strong>Macro S.A. (1996-1999)– Asistente de Servicio al Cliente / Operador Logístico / Supervisor de Control Final:</strong><br />
-                  Ingresó como asistente en servicio al cliente, brindando apoyo en procesos de devolución de productos y atención directa al cliente. Fui ascendido a operador logístico, donde estuve encargado de los sistemas informáticos de la tienda y de organizar la logística para los inventarios generales, incluyendo el diseño del layout cada seis meses. Posteriormente, fui promovido a supervisor de control final, siendo responsable de coordinar y supervisar los procesos relacionados con las cajas de registro y la recaudación diaria y el manejo de personal organizando turnos, descansos y manejo de personal.
+                  <strong>Inversiones Editec SAS – MONTANA Casas Campestres</strong> – Director de Obra (Feb 2023 – Oct 2023)  
+                  Dirección integral del proyecto de vivienda campestre, asegurando ejecución técnica y uso eficiente de recursos.
                 </li>
                 <li>
-                  <strong>Ferrocarril S.A. (2001-2002)– Soporte Técnico:</strong><br />
-                  Empresa del sector textil con enfoque en exportación de prendas. Encargado del soporte técnico a los sistemas informáticos y a la red de la empresa. Adquiri formación especializada en Oracle SQL y Oracle DBA, ya que la empresa contaba con un CRM propio desarrollado en Oracle utilizando SQL y PL/SQL.
+                  <strong>Constructora URCO SAS</strong> – Director de Obra (2017 – 2022)  
+                  Liderazgo en obras residenciales (Lauret y Hojarasca), gestionando procesos desde inicio hasta entrega.
+                </li>
+                <li>
+                  <strong>Conhogar SAS</strong> – Residente de Obra (Ene – Abr 2017)  
+                  Supervisión técnica en obra, asegurando cumplimiento diario en calidad y acabados.
+                </li>
+                <li>
+                  <strong>Viviendas del Norte SAS – Portón del Norte</strong> – Director de Obra (May 2016 – Ene 2017)  
+                  Ejecución y entrega de proyecto multifamiliar bajo estándares técnicos y tiempos de obra.
+                </li>
+                <li>
+                  <strong>Reserva del Rodeo SAS – Remanso del Rodeo</strong> – Residente de Obra (Ago 2015 – May 2016)  
+                  Control técnico en procesos estructurales y acabados en obra residencial.
+                </li>
+                <li>
+                  <strong>Inciviles S.A.</strong> – Director de Obra (Ene – Jul 2015)  
+                  Dirección del proyecto de estabilización de tubería de acueducto de 42” para EPM.
+                </li>
+                <li>
+                  <strong>GR Construcción S.A.S.</strong> – Representante Legal (Oct 2012 – Dic 2014)  
+                  Gestión técnica y administrativa de proyectos bajo firma propia.
+                </li>
+                <li><strong>Fajardo Williamson S.A.</strong> – Varios cargos (Sep 2003 – Oct 2012)  
+                  <ul className="list-disc pl-5">
+                    <li><strong>Residente de Acabados</strong> – Edificio Pie del Bosque (Sep 2003 – Mar 2005)</li>
+                    <li><strong>Residente de Obra</strong> – Edificio Cabo San Lucas (Abr 2005 – Oct 2005)</li>
+                    <li><strong>Residente de Obra</strong> – Edificio Torre Ferrara – Escuela Las Playas (Oct 2005 – Dic 2006)</li>
+                    <li><strong>Director de Obra</strong> – Centro Comercial Cauca Centro, Caucasia (Ene 2007 – Abr 2008)</li>
+                    <li><strong>Director de Obra</strong> – Hacienda Santa Marta, Montelíbano (Jun 2007 – Dic 2007)</li>
+                    <li><strong>Director de Obra</strong> – Edificio Bodegas Box (Abr 2008 – Jun 2008)</li>
+                    <li><strong>Director de Obra</strong> – Parcelación Bosques de Sajonia, Rionegro (Jul 2010 – Ago 2011)</li>
+                    <li><strong>Director de Obra</strong> – Edificio Massai Apartamentos (Jul 2008 – Oct 2012)</li>
+                  </ul>
+                  Gestión progresiva en cargos técnicos y directivos, liderando múltiples obras residenciales y comerciales con alto compromiso técnico y organizativo.
+                </li>
+                <li>
+                  <strong>CON&PRO Construcciones y Proyectos</strong> – Director Estratificación (Ene 2002 – Ene 2003)  
+                  Gestión técnica del proyecto de estratificación urbana en Medellín.
                 </li>
               </ul>
 
-              <h4>Docencia:</h4>
-              <ul>
-                <li>Instituto Metropolitano de Educacion- IME (1996) | Docente de Bachillerato.</li>
-                <li>Microtec de Colombia LTDA (1999) | Docente de Sistemas Operativos, Ofimatica.</li>
-                <li>Parroquia Nuestra Señora del Buen Consejo (2009) | Docente de Bachillerato. </li>
-                <li>Universidad Cooperativa de Colombia (2011-2012) | Docente de Ingenieria de sistemas, Asesor de Tesis de Grado. </li>
-              </ul>
-
-              <h4>Consultorías:</h4>
-              <ul>
-                <li>Celular2000 Comunicaciones (2005-)</li>
-                <li>DIMAC IT</li>
-              </ul>
-
-              <h4>Negocios Diversos:</h4>
-              <ul>
-                <li>Ingreso al negocio de comercialización e instalación de equipos de computo y redes.</li>
-                <li>Creacion de sitios web y Community Manager.</li>
-              </ul>
             </section>
           </div>
         </div>
